@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+        <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <div class="gallery">
+
+        <div class="image animal">
+            <img src="images/animal 1.jfif" alt="animal" onclick="openLightbox(0)">
+        </div>
+
+        <div class="image nature">
+            <img src="images/image2.jfif" alt="nature" onclick="openLightbox(1)">
+        </div>
+
+        <div class="image nature">
+            <img src="images/image3.jfif" alt="nature" onclick="openLightbox(2)">
+        </div>
+
+        <div class="image nature">
+            <img src="images/image4.jfif" alt="nature" onclick="openLightbox(3)">
+        </div>
+
+        <div class="image nature">
+            <img src="images/image5.jfif" alt="nature" onclick="openLightbox(4)">
+        </div>
+
+        <div class="image animals">
+            <img src="images/panada.jfif" alt="animal" onclick="openLightbox(5)">
+        </div>
+
+        <div class="image animals">
+            <img src="images/parrot.jfif" alt="animal" onclick="openLightbox(6)">
+        </div>
+
+        <div class="image nature">
+            <img src="images/download (1).jfif" alt="nature" onclick="openLightbox(7)">
+        </div>
+
+    </div>
+    <div id="lightbox">
+
+        <span class="close" onclick="closeLightbox()">×</span>
+
+        <button class="prev" onclick="changeImage(-1)">❮</button>
+
+        <img id="lightbox-img">
+
+        <button class="next" onclick="changeImage(1)">❯</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
